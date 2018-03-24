@@ -10,7 +10,7 @@ Create a student grading system using Python that has the following functionalit
 2. Removing a student from the system
 3. Calculating the average grades of a student
 
-The user should be able to select whether he/she wants to remove a student, enter grades for a student of find the average grades.async
+The user should be able to select whether he/she wants to remove a student, enter grades for a student of find the average grades.
 
 Also perform the following as part of this project:
 - There should be a log-in system to allow only admin access to the grading system
@@ -21,9 +21,9 @@ Example of the snapshots:
 
 Welcome to Grade Central 
 
-[1] - Enter Grades
-[2] - Remove Student
-[3] - Student Average Grades
-[4] - Exit
+1. Enter Grades
+2. Remove Student
+3. Student Average Grades
+4. Exit
 
 What would you like to do today? (Enter a number)
