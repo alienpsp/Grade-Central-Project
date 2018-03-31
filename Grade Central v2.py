@@ -1,25 +1,25 @@
 '''
 Create a student grading system using Python that has the following functionalities:
-1. Entering the grades of a student
-2. Removing a student from the system
-3. Calculating the average grades of a student
+1. Entering the grades of a student		- check
+2. Removing a student from the system		- check
+3. Calculating the average grades of a student	- check
 
-The user should be able to select whether he/she wants to remove a student, enter grades for a student of find the average grades.async
+The user should be able to select whether he/she wants to remove a student, enter grades for a student of find the average grades.
 
 Also perform the following as part of this project:
- - There should be a log-in system to allow only admin access to the grading system
- - Make sure you use dictionaries and lists for storing student's data.
- - Us Python functions as much as you can
+ - There should be a log-in system to allow only admin access to the grading system	- check
+ - Make sure you use dictionaries and lists for storing student's data.			- check
+ - Use Python functions as much as you can
 '''
+
 
 from statistics import mean as m
 import getpass
 
-
 admins = {'yoid':'yopw', 'admin':'admin', 'Master Wayne':'Batman'}
-studentDict = {'Alex':[99,92,96],
-               'Brandon':[88,89,91],
-               'Cassie':[77,72,75]}
+studentDict = {'Alex':[99,92,96,92,90,94],
+               'Brandon':[88,89,91,89,96,88],
+               'Cassie':[77,72,75,84,76,92]}
 
 def login():
     login = input('Username: ')
@@ -49,11 +49,13 @@ def RemoveStudent():
     if rmvStudent in studentDict:
         print('Removing Student...')
         del studentDict[rmvStudent]
+    else:
+        print('Student is not found in the system')
 
 def avgGrade():
     for eachStudent in studentDict:
         gradeList = studentDict[eachStudent]
-        average = m(gradeList)
+        average = round(m(gradeList), 2)
 
         print(eachStudent, 'has an average grade of: ', average)
 
@@ -90,8 +92,6 @@ def main():
         AddAdmins()
     elif action == '5':
         exit()
-    elif action == '0':
-        print('0')
     else:
         print('command invalid, please try again')
 
