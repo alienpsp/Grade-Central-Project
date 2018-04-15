@@ -1,8 +1,7 @@
 #Grade Central - Project 
 
-WIP
-
-Here is the final project of the Python Programming for Beginners and how I'll attempt to write a code to run as the scenario explained below and document it with Sphinx document after the project.
+Here is the final project of the "Python Programming for Beginners".
+Head over to https://databrigade.wordpress.com/2018/04/14/grade-central/ to checkout the breakdown for this project
 
 Scenario:
 Create a student grading system using Python that has the following functionalities:
@@ -15,9 +14,9 @@ The user should be able to select whether he/she wants to remove a student, ente
 Also perform the following as part of this project:
 - There should be a log-in system to allow only admin access to the grading system
 - Make sure you use dictionaries and lists for storing student's data.
-- Us Python functions as much as you can
+- Use Python functions as much as you can
 
-Example of the snapshots:
+Example of the main menu printout:
 
 Welcome to Grade Central 
 
